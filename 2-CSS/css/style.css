@@ -1,0 +1,38 @@
+h1 {
+	color: blue;
+}
+
+p {
+	text-indent: 32px;
+}
+
+h2 {
+	border-left: 4px solid red;
+	border-bottom: 4px solid red;
+	font-weight: bold;
+}
+
+li {
+	line-height: 1.5;
+}
+
+.wrong {
+	text-decoration: line-through;
+}
+
+a {
+	color: red;
+}
+
+a:hover {
+	color: blue;
+}
+
+img {
+	border: 3px solid gray;
+	padding: 30px;
+}
+
+img:hover {
+	border: 3px solid pink;
+}
