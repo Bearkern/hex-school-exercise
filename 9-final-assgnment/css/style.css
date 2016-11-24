@@ -1,0 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.socialNetworking {
+	height: 28px;
+	background: #f6f6f6;
+}
+
+.socialNetworking ul{
+	float: right;
+}
+
+.socialNetworking li {
+	float: left;
+	line-height: 28px;
+}
+
+.socialNetworking .facebook {
+	border-right: 1px solid #cccccc;
+	color: #4460a0;
+}
+
+.socialNetworking .twitter {
+	color: #00aaec;
+}
+
+.socialNetworking li a {
+	padding: 0 12px;
+	text-decoration: none;
+}
+
+.socialNetworking li img {
+	vertical-align: middle;
+}
+
+.logo h1 a {
+	margin: 8px 20px;
+	display: block;
+	height: 36px;
+	width: 170px;
+	float: left;
+	background: url(../images/logo.png);
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.menu ul {
+	float: right;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	display: block;
+	color: #00cc99;
+	text-decoration: none;
+	padding: 17px 10px;
+}
+
+.menu li a:hover {
+	color: #009973;
+}
+
+.menu li a:focus {
+	border-bottom: 3px solid #009973;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.banner {
+	position: relative;
+	background: url(../images/banner.jpg) no-repeat bottom right;
+	height: 350px;
+	width: 1024px;
+}
+
+.banner .box {
+	display: table;
+	height: 160px;
+	width: 1024px;
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.banner .box p {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 36px;
+	line-height: 50px;
+	padding-left: 25px;
+}
+
+.course ul {
+	float: left;
+	margin: 60px 0;
+}
+
+.course li {
+	float: left;
+	height: 330px;
+	width: 300px;
+	text-align: center;
+	padding: 24px 14px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px #d6d6d6;
+	margin: 0 15px;
+	box-sizing: border-box;
+}
+
+.course div {
+	height: 140px;
+}
+
+.course .html5Icon {
+	background: url(../images/icon_html5.png) no-repeat center;
+}
+
+.course .rwdIcon {
+	background: url(../images/icon_rwd.png) no-repeat center;
+}
+
+.course .jqueryIcon {
+	background: url(../images/icon_jquery.png) no-repeat center;
+}
+
+.course h2 {
+	margin: 12px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.course p {
+	text-align: justify;
+	line-height: 20px;
+}
+
+.difference {
+	margin-bottom: 60px;
+}
+
+.difference h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.compare {
+	width: 840px;
+	margin: 0 auto;
+}
+
+.compare th, .compare td{
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	height: 35px;
+	vertical-align: middle;
+	padding-left: 22px;
+	text-align: left;
+}
+
+.compare th {
+	background: #f7f7f7;
+	font-weight: bold;
+}
+
+.compare .highlight {
+	color: #00a67d;
+}
+
+.customerInfo {
+	background: -webkit-linear-gradient(#00644b, #009772);
+	height: 405px;
+	width: 1000px;
+}
+
+.formDescription {
+	display: table;
+	height: 130px;
+	width: 1000px;
+}
+
+.formDescription h2{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 24px;
+	line-height: 31px;
+	text-align: center;
+}
+
+.formField {
+	width: 1000px;
+	height: 275px;
+	float: left;
+	margin: 0 16px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.formField textarea {
+	float: left;
+	height: 245px;
+	width: 460px;
+	resize: none;
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.formField ul {
+	float: left;
+	width: 460px;
+	margin-left: 40px;
+}
+
+.formField label {
+	display: inline-block;
+	color: #fff;
+	margin-bottom: 6px;
+}
+
+.formField input {
+	font-size: 16px;
+	height: 30px;
+	width: 444px;
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+	margin-bottom: 16px;
+	padding-left: 12px;
+}
+
+#submit {
+	margin-top: 5px;
+	float: right;
+	background: #00cc99;
+	color: #fff;
+	height: 32px;
+	width: 70px;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+}
+
+#submit:hover {
+	background: #00b386; 
+}
+
+.footer {
+	width: 1000px;
+	height: 120px;
+}
+
+.footer img {
+	margin: 26px 23px;
+	float: left;
+}
+
+.contactUs ul {
+	float: right;
+	margin-top: 29px;
+}
+
+.contactUs li {
+	margin: 0 16px 12px 0;
+}
+
+.contactUs li span {
+	color: #e12d80;
+}
