@@ -1,0 +1,41 @@
+body {
+	background: red;
+}
+
+.title {
+	color: blue;
+}
+
+.content {
+	color: black;
+}
+
+@media(min-width: 375px) {
+	body {
+		background: blue;
+	}
+
+	.title {
+		color: white;
+	}
+
+	.content {
+		color: orange;
+		font-size: 30px;
+	}
+}
+
+@media(min-width: 768px) {
+	body {
+		background: green;
+	}
+
+	.title {
+		color: purple;
+	}
+
+	.content {
+		color: black;
+		font-size: 30px;
+	}
+}

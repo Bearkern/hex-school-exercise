@@ -47,45 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-.header {
-	width: 1000px;
-	margin: 0 auto;
-}
-.contact {
-	background: #f6f6f6;
-	height: 25px;
-}
-
-.contact li {
-	float: right;
-}
-
-.contact li a {
-	text-decoration: none;
-	margin-right: 10px;
-}
-
-.header h1 a{
-	background: url(../images/logo.png);
-	width: 170px;
-	height: 36px;
-	margin-top: 10px;
-	float: left;
-	text-indent: 101%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-.menu li {
-	float: right;
-}
-.menu li a {
-	display: block;
-	text-decoration: none;
-	color: #00cc99;
-	margin: 10px;
-}
-
-.menu li:first-child {
-	border-bottom: 3px solid #00cc99;
+.box {
+	width: 200px;
+	height: 200px;
+	background: green;
+	box-shadow: 5px 5px 15px gray;
+	border-radius: 50%;
 }
