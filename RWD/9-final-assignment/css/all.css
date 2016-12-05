@@ -1,0 +1,261 @@
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.header {
+	position: relative;
+	background: rgba(0, 0, 0, .75);
+	height: 56px;
+}
+
+.logo {
+	float: left;
+	padding: 16px 42px;
+}
+.logo a {
+	display: block;
+	background: url("../images/logo_w(null).svg") no-repeat center center;
+	width: 120px;
+	height: 24px;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.menu {
+	float: right;
+	margin-right: 33px;
+}
+.menu li {
+	float: left;
+}
+.menu li a {
+	display: inline-block;
+	color: #fff;
+	padding: 20px 15px;
+	text-decoration: none;
+}
+
+.banner {
+	background: url(../images/header_desktop.png) no-repeat center center black;
+	max-width: 100%;
+	height: 420px;
+	margin-top: -56px;
+}
+
+.slogan {
+	max-width: 460px;
+	margin: 0 auto;
+	vertical-align: middle;
+	background: rgba(0, 0, 0, .35);
+}
+.slogan h2 {
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+}
+.slogan p {
+	color: #fff;
+	text-align: center;
+}
+
+.feature {
+	background: #EFE9E7;
+	color: #3D1101;
+	height: auto;
+	overflow: auto;
+	text-align: center;
+	
+}
+.margintop {
+	margin-top: 70px;
+	float: left;
+	width: 33.3333%;
+	/*padding: 0 15px;*/
+}
+.margintop hr {
+	border: 1px solid #979797;
+}
+.margintop-title {
+	float: left;
+	width: 33.3333%;
+}
+.feature h2 {
+	text-align: center;
+	padding: 50px 0 30px;
+	font-size: 20px;
+	line-height: 32px;
+}
+.feature ul {
+	float: left;
+	padding-bottom: 50px;
+}
+.feature li {
+	max-width: 26.33333%;
+	padding: 0 3.5%;
+	float: left;
+	text-align: center;
+}
+.feature li img {
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.feature li h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.feature li p {
+	text-align: left;
+}
+
+.chef {
+	max-width: 100%;
+	height: auto;
+	overflow: auto;
+	background: #3D1101;
+	color: #fff;
+}
+.chef img {
+	margin-left: 40px;
+	float: left;
+}
+
+.chefIntro {
+	color: #EFE9E7;
+	float: left;
+	max-width: 40%;
+	margin-left: 25px;
+	padding-top: 80px;
+}
+.chefIntro h2 {
+	line-height: 32px;
+	font-size: 20px;
+}
+.chefIntro p {
+	margin-bottom: 16px;
+}
+
+.comment {
+	background: #EFE9E7;
+	color: #3D1101;
+	height: auto;
+	overflow: auto;
+}
+.comment h2 {
+	margin: 50px 0 32px;
+	text-align: center;
+	font-size: 24px;
+}
+.comment ul {
+	float: left;
+	margin: 0 42px 50px;
+}
+.comment li {
+	float: left;
+	width: 31.33333%;
+	margin: 0 1%;
+}
+.comment li img{
+	float: left;
+	margin-right: 13px;
+	border-radius: 50%;
+}
+.comment li h3 {
+	font-size: 18px;
+	line-height: 67px;
+}
+.comment li p {
+	margin: 0 0 16px 80px;
+}
+.comment li .signature {
+	float: right;
+}
+
+.reservation {
+	background: #F6F4F3;
+	color: #3D1101;
+	height: auto;
+	overflow: auto;
+	padding-bottom: 50px;
+}
+.reservation h2 {
+	font-size: 24px;
+	text-align: center;
+	margin: 50px 0 38px;
+}
+.reservation img {
+	float: left;
+	margin: 0 20px 0 42px;
+}
+.reservation label {
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+
+.footer {
+	background: #EFE9E7;
+	color: #3D1101;
+	height: auto;
+	overflow: auto;
+	padding: 50px 42px;
+}
+.footer h2 {
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+.about, .contact {
+	width: 31.33333%;
+	float: left;
+	margin-right: 1%;
+}
+.footer img {
+	float: right;
+	margin-bottom: 22px;
+}
+
+.social-media {
+	float: left;
+}
+.social-media li{
+	float: left;
+}
+
+.social-media {
+	float: right;
+	
+}
+.social-media .fa {
+	font-size: 36px;
+	margin-left: 12px;
+}
+.social-media .google a {
+	color: #DB4437;
+}
+.social-media .google a:hover {
+	color: #AC2B20;
+	font-size: 40px;
+}
+
+.social-media .twitter a {
+	color: #41ABE1;
+}
+.social-media .twitter a:hover {
+	color: #1F8FC7;
+	font-size: 40px;
+}
+
+.social-media .facebook a {
+	color: #3A5795;
+}
+.social-media .facebook a:hover {
+	color: #2B406E;
+	font-size: 40px;
+}
+
+
+
