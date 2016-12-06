@@ -3,10 +3,6 @@
 	margin: 0 auto;
 }
 
-.clearfix {
-	clear: both;
-}
-
 .header {
 	position: relative;
 	background: rgba(0, 0, 0, .75);
@@ -39,52 +35,91 @@
 	color: #fff;
 	padding: 20px 15px;
 	text-decoration: none;
+	border-bottom: 4px solid transparent;
+}
+.menu li a:hover {
+	background: rgba(255, 255, 255, .3);
+	border-bottom: 4px solid transparent;
+}
+.menu li a:focus {
+	background: rgba(255, 255, 255, .3);
+	border-bottom: 4px solid #fff;
+}
+.clearfix {
+	clear: both;
 }
 
 .banner {
 	background: url(../images/header_desktop.png) no-repeat center center black;
 	max-width: 100%;
 	height: 420px;
-	margin-top: -56px;
+	margin-top: -60px;
 }
 
 .slogan {
-	max-width: 460px;
-	margin: 0 auto;
-	vertical-align: middle;
+	position: absolute;
+	top: 123px;
+	left: 50%;
+	margin-left: -230px;
+	padding: 26px;
 	background: rgba(0, 0, 0, .35);
 }
 .slogan h2 {
 	color: #fff;
 	font-size: 36px;
 	text-align: center;
+	margin-bottom: 16px;
 }
 .slogan p {
 	color: #fff;
 	text-align: center;
 }
-
+@media(max-width: 768px) {
+	.banner {
+		background: url(../images/header_mobile.png) no-repeat center center black;
+		max-width: 100%;
+		height: 420px;
+		margin-top: -60px;
+	}
+	.slogan {
+		max-width: 300px;
+		position: absolute;
+		top: 123px;
+		left: 50%;
+		margin-left: -160px;
+		padding: 20px 6px;
+		background: rgba(0, 0, 0, .35);
+	}
+}
 .feature {
 	background: #EFE9E7;
 	color: #3D1101;
-	height: auto;
-	overflow: auto;
 	text-align: center;
-	
 }
-.margintop {
+.margin-left {
 	margin-top: 70px;
 	float: left;
-	width: 33.3333%;
-	/*padding: 0 15px;*/
+	width: 16.3333%;
+	padding-left: 17%;
 }
-.margintop hr {
+.margin-left hr {
 	border: 1px solid #979797;
 }
-.margintop-title {
+.margin-title {
 	float: left;
-	width: 33.3333%;
+	margin: 1%;
+	width: 31.3333%;
 }
+.margin-right {
+	margin-top: 70px;
+	float: left;
+	width: 16.3333%;
+	padding-right: 17%;
+}
+.margin-right hr {
+	border: 1px solid #979797;
+}
+
 .feature h2 {
 	text-align: center;
 	padding: 50px 0 30px;
@@ -115,31 +150,53 @@
 
 .chef {
 	max-width: 100%;
-	height: auto;
-	overflow: auto;
 	background: #3D1101;
 	color: #fff;
 }
+.chef-photo {
+	float: left;
+	max-width: 43%;
+	margin-left: 5%;
+	margin-right: 2%;
+}
 .chef img {
-	margin-left: 40px;
+	max-width: 100%;
 	float: left;
 }
-
-.chefIntro {
+.chef-intro {
+	float: left;
 	color: #EFE9E7;
-	float: left;
-	max-width: 40%;
-	margin-left: 25px;
+	max-width: 43%;
+	margin-right: 7%;
 	padding-top: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-.chefIntro h2 {
+.chef-intro h2 {
 	line-height: 32px;
 	font-size: 20px;
 }
-.chefIntro p {
+.chef-intro p {
 	margin-bottom: 16px;
 }
-
+@media(max-width: 768px) {
+	.chef-intro {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+}
+@media(max-width: 320px) {
+	.chef-photo {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.chef-intro {
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 30px;
+	}
+}
 .comment {
 	background: #EFE9E7;
 	color: #3D1101;
@@ -177,26 +234,53 @@
 }
 
 .reservation {
+	font-size: 14px;
 	background: #F6F4F3;
 	color: #3D1101;
-	height: auto;
-	overflow: auto;
-	padding-bottom: 50px;
+	padding: 50px 42px;
 }
 .reservation h2 {
 	font-size: 24px;
 	text-align: center;
-	margin: 50px 0 38px;
+	margin-bottom: 38px;
 }
-.reservation img {
+.map {
+	max-width: 50%;
+}
+.map img {
 	float: left;
-	margin: 0 20px 0 42px;
+	max-width: 100%;
+	margin-right: 20px;
+}
+.reservation fieldset {
+	padding: 0;
 }
 .reservation label {
-	font-size: 14px;
 	margin-bottom: 6px;
 }
-
+.reservation .pure-form-stacked .reservation-text {
+	padding: 5px 14px;
+	margin-bottom: 12px;
+	width: 100%;
+}
+.reservation .pure-form-stacked .reservation-radio {
+	margin: 0 36px 12px 6px;
+}
+.reservation-buttons {
+	float: right;
+	margin-top: 24px;
+}
+.reservation .pure-form-stacked .reservation-btn {
+	padding: 8px 19px;
+	margin-left: 11px;
+	float: left;
+}
+.btn-cancel {
+	background: rgba(0, 0, 0, .35);
+}
+.btn-submit {
+	background: #F56C23;
+}
 .footer {
 	background: #EFE9E7;
 	color: #3D1101;
@@ -214,20 +298,16 @@
 	margin-right: 1%;
 }
 .footer img {
+	width: 33.33333%;
 	float: right;
 	margin-bottom: 22px;
 }
-
 .social-media {
-	float: left;
+	width: 33.33333%;
+	float: right;
 }
 .social-media li{
 	float: left;
-}
-
-.social-media {
-	float: right;
-	
 }
 .social-media .fa {
 	font-size: 36px;
@@ -240,7 +320,6 @@
 	color: #AC2B20;
 	font-size: 40px;
 }
-
 .social-media .twitter a {
 	color: #41ABE1;
 }
@@ -248,7 +327,6 @@
 	color: #1F8FC7;
 	font-size: 40px;
 }
-
 .social-media .facebook a {
 	color: #3A5795;
 }
