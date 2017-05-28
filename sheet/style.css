@@ -1,0 +1,26 @@
+.label {
+  display: block;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+.form {
+  padding: 12px;
+}
+.input {
+  padding: 6px 12px;
+  width: 100%;
+  line-height: 1.5;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.input::-webkit-input-placeholder {
+  color: pink
+}
+.form-group {
+  margin-bottom: 12px;
+}
