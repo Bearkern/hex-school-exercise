@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset end */
+
+body {
+	background-color: #000;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.header {
+	background: #424242;
+	height: 300px;
+}
+
+.logo {
+	float: left;
+	padding: 92px 97px 92px 173px;
+}
+
+.logo h1 a {
+	display: block;
+	background: url(../assets/BMICLogo.png) no-repeat;
+	height: 117px;
+	width: 117px;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.formField {
+	padding: 74px 53px 73px 0;	
+}
+
+.formField ul {
+	float: left;
+	margin-right: 53px;
+}
+
+.formField p {
+	font-size: 18px;
+	color: #FFD366;
+	margin-bottom: 7px;
+}
+
+.formField ul input {
+	color: #FFF;
+	border: 2px solid #FFD366;
+	border-radius: 10px;
+	font-size: 24px;
+	line-height: 24px;
+	width: 214px;
+	padding: 6px 16px;
+	vertical-align: middle;
+	margin-bottom: 23px;
+	background: rgba(255,255,255,0.18);
+}
+
+.formField input::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.formField #seeResultId {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	font-size: 24px;
+	color: #424242;
+	background: #FFD366;
+	margin: 20px 0;
+}
+
+.formField #seeResultId {
+
+}
+
+.content {
+	background: #FFF;
+}
+
+.footer {
+	height: 90px;
+	position: relative;
+	background: url(../assets/BMICLogo.png) no-repeat #4A4A4A;
+	background-position: center center;
+	background-size: 55px 55px;
+}
+
+

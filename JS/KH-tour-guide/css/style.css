@@ -53,14 +53,6 @@ body {
 	background: #000;
 }
 
-h1 {
-	color: #fff;
-	font-size: 40px;
-	text-align: center;
-	padding: 89px 0 17px;
-
-}
-
 .wrapper {
 	position: relative;
 	margin: 0 auto;
@@ -68,41 +60,51 @@ h1 {
 }
 
 .header {
-	margin: 0 auto;
-	width: 1024px;
 	height: 380px;
 	background-image: url(../assets/the-urban-landscape.png);
 	background-size: cover;
 	background-position: top center;
 }
 
-.selectStyle {
+h1 {
+	color: #fff;
+	font-size: 40px;
 	text-align: center;
-	padding: 80px;
+	letter-spacing: 3.89px;
+	padding: 89px 0 96px;
 }
 
-.selectStyle::after {
-	position: relative;
-	content: '▼';
-	color: #000;
-	right: 40px;
+.selectStyle {
+	margin: 0 auto;
+	width: 452px;
+	text-align: center;
+	background: url(../assets/icons_down.png) no-repeat 415px center;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 3px;
 }
 
 .selectZone {
-	position: relative;
-	border: 3px solid #FFF;
 	height: 48px;
 	width: 452px;
-	background-color: rgba(255, 255, 255, 0.7);
-	font-size: 21px;
+	font-size: 18px;
+	background-color: transparent;
 	appearance:none;
 	-moz-appearance:none;
 	-webkit-appearance:none;
-	padding: 3px;
+	padding: 0 9.5px;
 	cursor: pointer;
+	border: 3px solid #FFF;
+}
+
+.content {
+	background: #FFF;
+	position: relative;
+	width: 100%;
 }
 
 .popularArea {
+	position: relative;
+	top: -30px;
 	margin: 0 auto;
 	width: 800px;
 	background: #FFF;
@@ -110,7 +112,7 @@ h1 {
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.popularArea h2 {
+.popularArea p {
 	padding: 20px 0 14px 26px;
 	font-size: 18px;
 }
@@ -154,13 +156,6 @@ h1 {
 	background: #559AC8;
 }
 
-.content {
-	z-index: -1;
-	background: #FFF;
-	position: relative;
-	padding-top: 130px;
-	width: 100%;
-}
 
 .siteList li {
 	
@@ -287,7 +282,6 @@ h1 {
 	width: 900px;
 	margin: 0 auto;
 	height: 24px;
-	background-color: #f6f6f6;
 	text-align: center;
 	padding: 49px 12px 44px;
 }
@@ -297,6 +291,7 @@ h1 {
 }
 
 .pagination li a {
+	color: #4A4A4A;
 	display: block;
 	font-size: 14px;
 	padding: 12px;
@@ -308,7 +303,7 @@ h1 {
 	cursor: pointer;
 }
 
-.pagination li a:focus {
+.pagination li a:active {
 	color: #559AC8;
 }
 

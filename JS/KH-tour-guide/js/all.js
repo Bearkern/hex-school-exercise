@@ -2502,21 +2502,35 @@ var data = [
 	}
 ]
 
-
 var selectZone = document.getElementById('selectZoneId');
-var siteList = document.querySelector('.siteList');
 var zoneTitle = document.getElementById('zoneTitleId');
 
-selectZone.addEventListener('change', updateList, false)
+selectZone.addEventListener('change', updateData, false)
 
-var siteLen = data.length;
+var siteList = document.querySelector('.siteList');
+var pagination = document.querySelector('.pagination ul');
+
+var dataLen = data.length;
+var itemsPerpage = 6;
+
+var pages = {
+	currentPage: 1,
+	itemsPerPage: itemsPerpage,
+	totalItems: dataLen,
+	totalPages: dataLen / itemsPerpage
+}
+
+function updateData(e) {
+	updateList(e);
+	updatePagination(e);
+}
 
 function updateList(e) {
 	var selectedZone = e.target.value;
 	zoneTitle.textContent = selectedZone;
 	var siteListLi = '';
 
-	for(var i = 0; i < siteLen; i++) {
+	for(var i = 0; i < pages.totalItems; i++) {
 		if (selectedZone == data[i].Zone) {
 			siteListLi += '<li>';
 			siteListLi += '<div class="sitePic" style="background-image:url(' + data[i].Picture1 + ')">'
@@ -2534,3 +2548,19 @@ function updateList(e) {
 	}
 	siteList.innerHTML = siteListLi;
 }
+
+function updatePagination() {
+	var paginationLi = '';
+	for(var i = 0; i < pages.totalPages; i++) {
+		paginationLi += '<li><a>';
+		paginationLi += i + 1;
+		paginationLi += '</a></li>';
+	}
+
+	pagination.innerHTML += '<li><a class="prevBtn">&lt;prev</a></li>';
+	pagination.innerHTML += paginationLi;
+	pagination.innerHTML += '<li><a class="nextBtn">next&gt;</a></li>';
+}
+
+var prevBtn = document.querySelector('.prevBtn');
+var nextBtn = document.querySelector('.nextBtn');
