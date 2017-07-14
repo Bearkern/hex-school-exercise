@@ -4,7 +4,6 @@ xhr.send();
 xhr.onload = function() {
 	var xhrText = JSON.parse(xhr.responseText);
 	var data = xhrText.result.records;
-	console.log(xhrText.result.records)
 	var selectZone = document.getElementById('selectZoneId');
 	var zoneTitle = document.getElementById('zoneTitleId');
 	var siteList = document.querySelector('.siteList');
