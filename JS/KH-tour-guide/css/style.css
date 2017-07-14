@@ -104,7 +104,6 @@ h1 {
 }
 
 .popularArea {
-	position: relative;
 	top: -30px;
 	margin: 0 auto;
 	width: 800px;
@@ -157,11 +156,6 @@ h1 {
 	background: #559AC8;
 }
 
-
-.siteList li {
-	
-}
-
 .separate {
 	width: 900px;
 	margin: 0 auto;
@@ -207,6 +201,7 @@ h1 {
 	float: left;
 	padding: 24px 32px;
 }
+
 .siteList li {
 	float: left;
 	width: 464px;
@@ -214,6 +209,7 @@ h1 {
 	background: #FFF;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
+
 .sitePic {
 	position: relative;
 	background-image: url(http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960);

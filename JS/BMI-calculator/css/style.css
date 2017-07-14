@@ -50,9 +50,10 @@ table {
 /* CSS reset end */
 
 body {
-	background-color: #000;
+	background-color: #F5F5F5;
 }
 .wrapper {
+	position: relative;
 	margin: 0 auto;
 	width: 1024px;
 }
@@ -112,27 +113,176 @@ body {
 .formField #seeResultId {
 	height: 120px;
 	width: 120px;
+	border: none;
 	border-radius: 50%;
 	font-size: 24px;
 	color: #424242;
 	background: #FFD366;
 	margin: 20px 0;
+	cursor: pointer;
+	outline: none;
 }
 
-.formField #seeResultId {
-
+.formField #seeResultId:hover {
+	box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
 }
 
-.content {
-	background: #FFF;
+.formField #seeResultId:active {
+	box-shadow: none;
+	background: #DEA921;
+}
+
+#resultId {
+	position: relative;
+	height: 123px;
+	width: 123px;
+	border: 6px solid #86D73F;
+	border-radius: 50%;
+	font-size: 32px;
+	color: #86D73F;
+	background: transparent;
+	margin: 20px 0;
+	cursor: pointer;
+	outline: none;
+}
+
+#resultId .resultValue {
+	position: absolute;
+	font-size: 32px;
+	color: #86D73F;
+	top: 50%;
+	left: 50%;
+	margin-top: -16px; 
+	margin-left: -32px;
+}
+
+#resultId .resultText {
+	position: absolute;
+	font-size: 14px;
+	color: #86D73F;
+	top: 0;
+	left: 0;
+}
+
+#resultId i {
+	position: absolute;
+	top: 0;
+	color: #86D73F;
+}
+
+.measureRecord {
+	width: 624px;
+	margin: 0 auto;
+}
+
+.measureRecord h2 {
+	text-align: center;
+	padding: 48px 0 28px 0;
+	color: #424242;
+	font-size: 24px;
+}
+
+.measureRecord li {
+	float: left;
+	font-size: 20px;
+	height: 62px;
+	width: 624px;
+	background-color: #FFF;
+	margin: 8px 0;
+	text-align: center;
+	line-height: 62px;
+}
+
+.normal small {
+	font-size: 12px;
+	margin-left: 42px;
+	vertical-align: top;
+}
+
+.underweight {
+	position: relative;  
+}
+
+.underweight:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 7px;
+	background-color: #31BAF9;
+	box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+}
+
+.normal {
+	position: relative;  
+}
+
+.normal:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 7px;
+	background-color: #86D73F;
+	box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+}
+
+.overweight {
+	position: relative;  
+}
+
+.overweight:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 7px;
+	background-color: #FF982D;
+	box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+
+.obese, .clinicallyObese {
+	position: relative;  
+}
+
+.obese:after, .clinicallyObese:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 7px;
+	background-color: #FF6C02;
+	box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
+}
+
+.morbidlyObese {
+	position: relative;  
+}
+
+.morbidlyObese:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 7px;
+	background-color: #FF1200;
+	box-shadow: 2px 0 3px 0 rgba(255, 17, 0, 0.29); 
+}
+
+.clearfix {
+	clear: both;
 }
 
 .footer {
+	margin-top: 66px;
 	height: 90px;
 	position: relative;
 	background: url(../assets/BMICLogo.png) no-repeat #4A4A4A;
 	background-position: center center;
 	background-size: 55px 55px;
 }
-
-
