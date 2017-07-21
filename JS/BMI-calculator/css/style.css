@@ -132,46 +132,65 @@ body {
 	background: #DEA921;
 }
 
-#resultId {
+.resultBtn {
 	position: relative;
+	float: left;
 	height: 123px;
 	width: 123px;
 	border: 6px solid #86D73F;
 	border-radius: 50%;
-	font-size: 32px;
-	color: #86D73F;
 	background: transparent;
 	margin: 20px 0;
 	cursor: pointer;
 	outline: none;
 }
 
-#resultId .resultValue {
+.resultBtn .resultValue {
 	position: absolute;
 	font-size: 32px;
-	color: #86D73F;
-	top: 50%;
-	left: 50%;
-	margin-top: -16px; 
-	margin-left: -32px;
+	width: auto;
+	height: 40px;
+	top: -9px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
 }
 
-#resultId .resultText {
+.resultBtn .resultText {
 	position: absolute;
 	font-size: 14px;
-	color: #86D73F;
-	top: 0;
+	width: auto;
+	height: 17px;
+	top: 42px;
+	right: 0;
+	bottom: 0;
 	left: 0;
+	margin: auto;
 }
 
-#resultId i {
+.resultBtn .refresh {
 	position: absolute;
-	top: 0;
-	color: #86D73F;
+	width: 22px;
+	height: 20px;
+	padding: 6px 4px 4px;
+	right: -7px;
+	bottom: 0;
+	font-size: 17px;
+	color: #424242;
+	border-radius: 50%;
+	background-color: #86D73F;
+	border: 3px solid #424242;
+}
+
+.formField .statusText {
+	float: left;
+	font-size: 32px;
+	margin: 60px 0 0 18px;
 }
 
 .measureRecord {
-	width: 624px;
+	width: 624px; 
 	margin: 0 auto;
 }
 
@@ -189,87 +208,74 @@ body {
 	width: 624px;
 	background-color: #FFF;
 	margin: 8px 0;
-	text-align: center;
+	text-align: left;
 	line-height: 62px;
 }
-
-.normal small {
+.measureRecord small {
 	font-size: 12px;
-	margin-left: 42px;
 	vertical-align: top;
 }
 
-.underweight {
-	position: relative;  
+.status, .bmi, .weight, .height, .date {
+	display: block;
+	float: left;
+}
+.status {
+	padding-left: 19px;
+	width: 110px;
 }
 
-.underweight:after {
+.bmi {
+	width: 123px;
+}
+
+.weight {
+	width: 134px;
+}
+
+.height {
+	width: 155px;
+}
+
+.date {
+	width: 72px;
+	padding-right: 11px; 
+}
+
+.underweight, .normal, .overweight, .obese, .clinicallyObese, .morbidlyObese {
+	position: relative;
+}
+
+.underweight:after, .normal:after, .overweight:after, .obese:after, .clinicallyObese:after, .morbidlyObese:after {
 	position: absolute;
 	content: "";
 	top: 0;
 	left: 0;
 	bottom: 0;
 	width: 7px;
+}
+
+.underweight:after {
 	background-color: #31BAF9;
 	box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
 }
 
-.normal {
-	position: relative;  
-}
-
 .normal:after {
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 7px;
 	background-color: #86D73F;
 	box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
 }
 
-.overweight {
-	position: relative;  
-}
-
 .overweight:after {
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 7px;
 	background-color: #FF982D;
 	box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
 }
 
-.obese, .clinicallyObese {
-	position: relative;  
-}
-
 .obese:after, .clinicallyObese:after {
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 7px;
 	background-color: #FF6C02;
 	box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
 }
 
-.morbidlyObese {
-	position: relative;  
-}
-
 .morbidlyObese:after {
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 7px;
 	background-color: #FF1200;
 	box-shadow: 2px 0 3px 0 rgba(255, 17, 0, 0.29); 
 }

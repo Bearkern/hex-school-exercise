@@ -18,24 +18,28 @@
 			</div>
 			
 			<div class="formField">
-				<form action="">
-					<ul>
-						<li>
-							<p>身高 cm</p>
-							<input type="text" id="heightId" placeholder="請輸入身高">
-						</li>
-						<li>
-							<p>體重 kg</p>
-							<input type="text" id="weightId" placeholder="請輸入體重">
-						</li>
-					</ul>
-					 <!-- <input type="button" id="seeResultId" value="看結果">  -->
-					<button id="resultId">
-						<span class="resultValue">20.9</span>
-						<span class="resultText">BMI</span> 
-						<i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
-					</button>
-				</form>
+				<ul>
+					<li>
+						<p>身高 cm</p>
+						<input type="text" id="heightId" placeholder="請輸入身高">
+					</li>
+
+					<li>
+						<p>體重 kg</p>
+						<input type="text" id="weightId" placeholder="請輸入體重">
+					</li>
+				</ul>
+
+				<button id="seeResultId">看結果</button>
+
+				<button class="resultBtn">
+					<span class="resultValue"></span>
+					<span class="resultText">BMI</span> 
+					<i class="fa fa-refresh fa-spin fa-2x fa-fw refresh"></i>
+				</button>
+
+				<p class="statusText"></p>
+				
 			</div>
 		</div>
 
@@ -43,17 +47,6 @@
 			<div class="measureRecord">
 				<h2>BMI 紀錄</h2>
 				<ul>
-					<li class="underweight"></li>
-					<li class="normal"><span> 理想</span>
-						<small>BMI</small><span> 20.90</span>
-						<small>weight</small><span> 70KG</span>
-						<small>height</small><span> 180cm</span>
-						<small>07-12-2017</small>
-					</li>
-					<li class="overweight"></li>
-					<li class="obese"></li>
-					<li class="clinicallyObese"></li>
-					<li class="morbidlyObese"></li>
 				</ul>
 				<div class="clearfix"></div> 
 			</div>
